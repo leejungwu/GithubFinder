@@ -10,7 +10,7 @@ class App extends Component{
     users: [],
     loading: false
   }
-  // async componentDidMount() {
+  // async componentDidMount() {  //처음 30개 로딩
   //   this.setState({ loading: true });
   //   const res = await axios.get(`http://api.github.com/users?client_id=$
   //   {process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=$

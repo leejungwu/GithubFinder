@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 
-export class Search extends Component {
+class Search extends Component {
     state = {
         text: ''
     }
@@ -26,7 +26,7 @@ export class Search extends Component {
             <div>
                 <form onSubmit={this.onSubmit} className="form">
                     <input type="text" name="text" placeholder="Search Users..." value={this.state.text} onChange={this.onChange}/>
-                    <input type="submit" name="Search" className="btn btn-dark btn-block" value={this.state.text}/>
+                    <input type="submit" name="Search" className="btn btn-dark btn-block" value="Search"/>
                 </form>
             </div>
         )
